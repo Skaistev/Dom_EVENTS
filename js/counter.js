@@ -7,12 +7,12 @@ screenDOM.innerText = 'Score: ' + count;
 
 function increment() {
     ++count;
-    screenDOM.innerText = 'Score: ' + count;
+    screenDOM.innerText = 'Score: ' + count + screenDOM.innerText;
 }
 
 function decrement() {
     --count;
-    screenDOM.innerText = 'Score: ' + count;
+    screenDOM.innerText = 'Score: ' + count  + screenDOM.innerText;
 }
 
 plusDOM.addEventListener('click', increment);
