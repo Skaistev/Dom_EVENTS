@@ -5,7 +5,7 @@ function header() {
     console.log(path)
 
     const HTML = `
-        <a href="${href}>Home</a>
+        <a href="${href}HOME>Home</a>
         <a href="${href}single-button-click">Single button click</a>
         <a href="${href}counter/">Counter</a>
         <a href="${href}basketball/">Basketball</a>
