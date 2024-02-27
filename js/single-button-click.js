@@ -1,3 +1,7 @@
+import { header } from "./header.js";
+header();
+
+
 const firstBtnDOM = document.getElementById('first');
 const secondBtnDOM = document.getElementById('second');
 

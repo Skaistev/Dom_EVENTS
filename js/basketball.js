@@ -1,3 +1,7 @@
+import { header } from "./header.js";
+header();
+
+
 const team1points1DOM = document.querySelector('.team:nth-child(1) .btn:nth-child(1)');
 const team1points2DOM = document.querySelector('.team:nth-child(1) .btn:nth-child(2)');
 const team1points3DOM = document.querySelector('.team:nth-child(1) .btn:nth-child(3)');
