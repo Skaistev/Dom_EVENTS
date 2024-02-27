@@ -11,8 +11,15 @@ const history = document.querySelector('.history');
 
 let team1Score = 0;
 let team2Score = 0;
+let scoreCount = 0;
 
 function updateInfo(teamId, points) {
+    scoreCount++;
+
+    if (scoreCount===1){
+        history.innerHTML = '';
+    }
+
     if (teamId === 1) {
         team1Score += points;
     }
@@ -24,7 +31,8 @@ function updateInfo(teamId, points) {
     const text = team1Score + ':' + team2Score;
     screen.innerText = text;
 
-    history.innerHTML = `<li>Komanda ${teamId} imete ${points} task${points === 1 ? 'a' : 'us'} (${text})</li>` + history.innerHTML;
+    history.innerHTML = `<li>Komanda ${teamId} imete ${points} task${points === 1 ? 'a' : 'us'} (${text})</li>` + history.innerHTML; 
+
 }
 
 team1points1DOM.addEventListener('click', () => updateInfo(1, 1));
