@@ -1,6 +1,7 @@
 function header() {
     const navDOM = document.querySelector('.main-nav');
-    const href = location.hostname === 'localhost' ? '/' : 'skaistev.github.io/Dom_EVENTS/';
+    const href = location.hostname === 'localhost' ? '/' : './';
+
 
     const HTML = `
         <a href="${href}">Home</a>
