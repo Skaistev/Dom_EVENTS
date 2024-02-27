@@ -1,6 +1,8 @@
 function header() {
     const navDOM = document.querySelector('.main-nav');
-    const href = location.hostname === 'localhost' ? '/' : './';
+    const href = location.hostname === 'localhost' ? '/' : './path/';
+    const path = location.pathname;
+    console.log(path)
 
     const HTML = `
         <a href="${href}">Home</a>
