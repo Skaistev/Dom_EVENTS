@@ -3,7 +3,7 @@ function header() {
     const titleDom = document.querySelector('h1');
     console.log(titleDom.innerText)
     console.log(location.pathname)
-    const href = location.hostname === 'localhost' ? '/' : location.pathname.includes(titleDom.innerText)? "./": "../";
+    const href = location.hostname === 'localhost' ? '/' : location.pathname.includes(titleDom.innerText)? "./": "/";
 
 
     const HTML = `
