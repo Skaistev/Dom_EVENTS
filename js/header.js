@@ -13,7 +13,7 @@ function header() {
         <a href="${href}virykle/">Virykle</a>
     `;
     navDOM.innerHTML = HTML;
-    
+
 }
 
 export { header };
