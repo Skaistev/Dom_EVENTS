@@ -1,8 +1,8 @@
 function header() {
 
     const navDOM = document.querySelector('.main-nav');
-    const localhost = 'http://localhost:4812';
-    const github = 'https://skaistev.github.io/Dom_EVENTS';
+    const localhost = 'http://localhost:4812/';
+    const github = 'https://skaistev.github.io/Dom_EVENTS/';
     const href = location.hostname === 'localhost' ? localhost : github;
 
     const HTML = `
