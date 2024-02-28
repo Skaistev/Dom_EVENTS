@@ -1,10 +1,9 @@
 function header() {
+
     const navDOM = document.querySelector('.main-nav');
-    const titleDom = document.querySelector('h1');
-    console.log(titleDom.innerText)
-    console.log(location.pathname)
-    const href = location.hostname === 'localhost' ? '/' : './'
-    // location.pathname.includes(titleDom.innerText)? "./": "../";
+    const localhost = 'http://localhost:4812/';
+    const github = 'https://skaistev.github.io/Dom_EVENTS/';
+    const href = location.hostname === 'localhost' ? localhost : github;
 
     const HTML = `
         <a href="${href}">Home</a>
@@ -14,6 +13,7 @@ function header() {
         <a href="${href}virykle/">Virykle</a>
     `;
     navDOM.innerHTML = HTML;
+    
 }
 
 export { header };
