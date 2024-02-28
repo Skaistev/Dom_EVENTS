@@ -1,8 +1,8 @@
 function header() {
 
     const navDOM = document.querySelector('.main-nav');
-    const localhost = 'http://localhost:4812/';
-    const github = 'https://skaistev.github.io/Dom_EVENTS/';
+    const localhost = 'http://localhost:4812';
+    const github = 'https://skaistev.github.io/Dom_EVENTS';
     const href = location.hostname === 'localhost' ? localhost : github;
 
     const HTML = `
@@ -11,6 +11,7 @@ function header() {
         <a href="${href}counter/">Counter</a>
         <a href="${href}basketball/">Basketball</a>
         <a href="${href}virykle/">Virykle</a>
+        <a href="${href}cart/">Prekiu krepselis</a>
     `;
     navDOM.innerHTML = HTML;
 
