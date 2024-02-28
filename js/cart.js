@@ -17,6 +17,11 @@ const data = [
         unitPrice: 2.89,
         count: 5,
     },
+    {
+        name: 'Cepelinai',
+        unitPrice: 2.89,
+        count: 5,
+    },
 ];
 
 const tbodyDOM = document.querySelector('tbody');
@@ -45,4 +50,53 @@ for (const item of data) {
 tbodyDOM.innerHTML = HTML;
 
 const finalPrice = data.reduce((t, i) => t + i.unitPrice * i.count, 0);
-finalPriceDOM.innerText = finalPrice + ' Eur';
+finalPriceDOM.innerText = finalPrice.toFixed(2) + ' Eur';
+
+
+const trListDOM = tbodyDOM.querySelectorAll('tr');
+
+for (let i=0; i<data.length; i++) {
+    const trDOM = trListDOM[i];
+    const formDOM = trDOM.querySelector ('form');
+    const minusDOM = formDOM.querySelector('button:nth-of-type(1)');
+    const plusDOM = formDOM.querySelector('button:nth-of-type(2)');
+    const countDOM = formDOM.querySelector('span')
+    const priceDOM = trDOM.querySelector("td:nth-child(5)")
+
+    minusDOM.addEventListener("click", event =>{
+
+        event.preventDefault() 
+        const minOrderAmount = 0
+        if (data[i].count === minOrderAmount){
+            return;
+        }
+
+        data[i].count--;
+        countDOM.innerText = data[i].count + " vnt.";
+        priceDOM.innerText = (data[i].count * data[i].unitPrice).toFixed(2) + " EUR";
+        const finalPrice = data.reduce((t, i) => t + i.unitPrice * i.count, 0);
+        finalPriceDOM.innerText = finalPrice.toFixed(2) + ' Eur';
+    });
+    plusDOM.addEventListener("click", event=>{
+
+        event.preventDefault()
+        const maxOrderAmount = 10;
+        if (data[i].count === maxOrderAmount){
+            return;
+        }
+        data[i].count++;
+        countDOM.innerText = data[i].count + " vnt.";
+        priceDOM.innerText = (data[i].count * data[i].unitPrice).toFixed(2) + " EUR";
+        const finalPrice = data.reduce((t, i) => t + i.unitPrice * i.count, 0);
+        finalPriceDOM.innerText = finalPrice.toFixed(2) + ' Eur';
+    });
+}
+
+// function minusButtonHandler(event){
+//     event.preventDefault()
+// }
+
+// function plusButtonHandler(event){
+//     event.preventDefault()
+    
+// }
