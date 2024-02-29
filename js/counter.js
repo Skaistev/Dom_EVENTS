@@ -21,3 +21,5 @@ function decrement() {
 
 plusDOM.addEventListener('click', increment);
 minusDOM.addEventListener('click', decrement);
+
+console.log(plusDOM)
