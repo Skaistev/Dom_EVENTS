@@ -15,6 +15,7 @@ function header() {
         <a href="${href}laikrodis/">Laikrodis</a>
         <a href="${href}laikrodis2/">Laikrodis</a>
         <a href="${href}todo/">TODO</a>
+        <a href="${href}tipsCounter/">Tips Counter</a>
     `;
     navDOM.innerHTML = HTML;
 

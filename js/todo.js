@@ -1,5 +1,5 @@
-// import { header } from './header.js';
-// header();
+import { header } from './header.js';
+header();
 
 const listDOM = document.getElementById('list');
 const formDOM = document.forms[0];

@@ -1,0 +1,74 @@
+.main {
+    background-color: blue;
+    width: 400px;
+    /* height: 400px; */
+    margin: 100px calc(50% - 200px);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+
+   
+}
+.name {
+    background-color: grey;
+}
+h2 {
+    color: white;
+   text-align: center;
+   
+}
+
+.inputFields {
+    display: flex;
+    flex-direction: column;
+    /* gap:20px; */
+    width: 360px;
+    margin: 0 calc(50% - 180px);
+}
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 360px;
+    gap:10px;
+    border-bottom: 1px solid pink;
+    padding: 10px 0;
+}
+.inputField {
+   width: 400px;
+   height: 40px;
+}
+h4 {
+    width: 200px;
+}
+
+button {
+    border-radius: 10px;
+    height: 35px;
+    text-align: center;
+    color: white;
+    background-color: orange;
+    margin-top: 10px;
+}
+.inputFieldsContainer {
+   width: 380px;
+   margin:  0 calc(50% - 190px);
+   border-top: 1px solid pink;
+   padding: 10px 0;
+}
+.outputFields{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.tipField, .totalField {
+ background-color: rgb(182, 178, 178);
+ border-radius: 5px;
+ line-height: 25px;
+ padding: 5px;
+ width: 360px;
+ margin:  0 calc(50% - 185px);
+}
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM events</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/pages/tipsCounter.css">
+</head>
+
+<body>
+    <header>
+        <nav class="main-nav"></nav>
+    </header>
+
+    <section class="main">
+        <div class="container">
+            <div class="name">
+               <h2>Tip calculator</h2>
+            </div>
+              <div class="inputFields">
+                <div class="input">
+                   <h4>Bill</h4>
+                   <input id="inputBillSum" class="inputField" type="number" placeholder="bill sum"></input>
+                </div>
+                <div class="input">
+                   <h4>Rate service</h4>
+                   <select id="input-value" class="inputField" name="ratenumber">
+                      <option id="1" value ="15">15%-Exelent</option>
+                      <option id="2" value="20">20%</option>
+                      <option id="3" value="30">30%</option>
+                   </select>
+                </div>
+                <button id="btn" class="btn">CALCULATE</button>
+            </div>
+            <div class="inputFieldsContainer">
+              <div class="outputFields">
+                <div id="sumTips" class="tipField">Tips:</div>
+                <div id="sumTotal"class="totalField">Total:</div>
+              </div>
+        </div>
+    </div>
+        </section>
+        <script type="module" src="../js/tipsCounter.js"></script>
+</body>
+
+</html>
